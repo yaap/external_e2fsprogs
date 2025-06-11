@@ -88,6 +88,12 @@ cc_binary {
     defaults: ["mke2fs_device_defaults"],
     target: {
         host: {
+            dist: {
+                targets: [
+                    "dist_files",
+                    "sdk",
+                ],
+            },
             static_libs: [
                 "libext2_blkid",
                 "libext2_misc",
